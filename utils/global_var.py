@@ -43,8 +43,8 @@ DBSCAN_Psedo_code =    """
                 for each object p' object in N:
                     if p' is not visited:
                         mark p' visited
-                    if e-neighborhood of pi has at least minpits of object:
-                        add those object in N
+                        if e-neighborhood of pi has at least minpits of object:
+                            add those object in N
                     if p' is not member of any cluster:
                         add p' in C
                 End For
