@@ -3,3 +3,4 @@ numpy
 pandas
 opencv-python-headless
 matplotlib
+scikit-learn
