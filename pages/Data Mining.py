@@ -7,7 +7,7 @@ from utils.Decision_tree import Decision_tree,list_of_entropy
 import utils.global_var as gl
 from utils.neural_network import start_learing,Reset_network
 
-
+st.set_page_config(layout="wide")
 
 st.title("DATA MINING")
 st.write("Mtech 1 Year - 1 sem")
