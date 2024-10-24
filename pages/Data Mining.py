@@ -4,8 +4,10 @@ import pandas as pd
 import cv2 
 import numpy as np
 from utils.Decision_tree import Decision_tree,list_of_entropy
-import utils.global_var as gl
+from utils.global_var import GLOBAL_var
 from utils.neural_network import start_learing,Reset_network
+
+gl = GLOBAL_var()
 
 st.title("DATA MINING")
 st.write("Mtech 1 Year - 1 sem")
@@ -77,7 +79,7 @@ if uploaded_file:
     st.write(tree.predict_data(data))
     # print(gl.feature_list)
     column_counter = 1
-    print(gl.DB_DIVIDE_BY)
+    # print(gl.DB_DIVIDE_BY)
     for key in gl.Entropy_list:
         # print(gl.Entropy_list[key])
         if column_counter ==int(str(key)[-1]):
