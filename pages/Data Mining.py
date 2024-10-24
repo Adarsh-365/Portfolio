@@ -4,10 +4,10 @@ import pandas as pd
 import cv2 
 import numpy as np
 from utils.Decision_tree import Decision_tree,list_of_entropy
-from utils.global_var import GLOBAL_var
+import utils.global_var as gl
 from utils.neural_network import start_learing,Reset_network
 
-gl = GLOBAL_var()
+
 
 st.title("DATA MINING")
 st.write("Mtech 1 Year - 1 sem")
