@@ -1,7 +1,7 @@
 
 import streamlit as st
 import pandas as pd 
-import cv2 
+# import cv2 
 import numpy as np
 from utils.Decision_tree import Decision_tree,list_of_entropy
 import utils.global_var as gl
@@ -235,24 +235,24 @@ if gl.start_Neural:
     
                 
 
-    image_path = 'XOR1.jpg'  # Path to your existing image
-    CV2image = cv2.imread(image_path)
-    CV2image = cv2.resize(CV2image,(900,400))
+    # image_path = 'XOR1.jpg'  # Path to your existing image
+    # CV2image = cv2.imread(image_path)
+    # CV2image = cv2.resize(CV2image,(900,400))
 
-    CV2imageorg = cv2.cvtColor(CV2image, cv2.COLOR_BGR2RGB)
-    inpux1_str =f"[{gl.input_data[0][0]},{gl.input_data[1][0]},{gl.input_data[2][0]},{gl.input_data[3][0]}]"
-    CV2imageorg= cv2.putText(CV2imageorg, inpux1_str, (10, 90),1, 1, (255, 0, 0), 2)
-
-
-    output_str =f"[{round(gl.predicted_op[0][0],2)},{round(gl.predicted_op[1][0],2)},{round(gl.predicted_op[2][0],2)},{round(gl.predicted_op[3][0],2)}]"
-    CV2imageorg= cv2.putText(CV2imageorg, output_str, (700, 300),1, 1.2, (0, 0, 0), 2)
+    # CV2imageorg = cv2.cvtColor(CV2image, cv2.COLOR_BGR2RGB)
+    # inpux1_str =f"[{gl.input_data[0][0]},{gl.input_data[1][0]},{gl.input_data[2][0]},{gl.input_data[3][0]}]"
+    # CV2imageorg= cv2.putText(CV2imageorg, inpux1_str, (10, 90),1, 1, (255, 0, 0), 2)
 
 
-    inpux2_str =f"[{gl.input_data[0][1]},{gl.input_data[1][1]},{gl.input_data[2][1]},{gl.input_data[3][1]}]"
-    CV2imageorg= cv2.putText(CV2imageorg, inpux2_str, (10, 320),1, 1, (255, 0, 0), 2)
+    # output_str =f"[{round(gl.predicted_op[0][0],2)},{round(gl.predicted_op[1][0],2)},{round(gl.predicted_op[2][0],2)},{round(gl.predicted_op[3][0],2)}]"
+    # CV2imageorg= cv2.putText(CV2imageorg, output_str, (700, 300),1, 1.2, (0, 0, 0), 2)
 
 
-    st.image(CV2imageorg, caption='Uploaded Image', use_column_width='auto')
+    # inpux2_str =f"[{gl.input_data[0][1]},{gl.input_data[1][1]},{gl.input_data[2][1]},{gl.input_data[3][1]}]"
+    # CV2imageorg= cv2.putText(CV2imageorg, inpux2_str, (10, 320),1, 1, (255, 0, 0), 2)
+
+
+    # st.image(CV2imageorg, caption='Uploaded Image', use_column_width='auto')
         
 
 
