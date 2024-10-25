@@ -1,6 +1,6 @@
 opencv-python
 numpy
 pandas
-opencv-python-headless
 matplotlib
 scikit-learn
+opencv-python-headless
