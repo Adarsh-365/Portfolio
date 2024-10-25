@@ -3,4 +3,4 @@ numpy
 pandas
 matplotlib
 scikit-learn
-opencv-python-headless
+opencv-python-headless==4.5.3.56
