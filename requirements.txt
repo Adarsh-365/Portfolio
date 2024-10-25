@@ -4,4 +4,3 @@ pandas
 matplotlib
 scikit-learn
 pip==24.2
-opencv-python-headless==4.10.0.84
