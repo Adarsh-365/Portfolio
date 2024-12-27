@@ -10,7 +10,7 @@ st.set_page_config(
 
 
 
-st.sidebar.image: st.sidebar.image("image_circle.png", use_column_width=True) 
+st.sidebar.image: st.sidebar.image("image_circle.png", use_container_width=True) 
 
 st.sidebar.markdown: st.sidebar.markdown(
     """
